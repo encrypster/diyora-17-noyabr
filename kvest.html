@@ -1,536 +1,817 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#ffe4e6">
-<title>Bo‘lajak shifokor kvesti — Diyora uchun ❤️</title>
-<meta name="description" content="6 ta savol, faxriy diplom va kechki syurpriz — Diyora uchun.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Bo‘lajak shifokor kvesti 👑">
-<meta property="og:description" content="6 ta savol, faxriy diplom va kechki syurpriz — Diyora uchun.">
-<meta property="og:url" content="https://encrypster.github.io/diyora-17-noyabr/kvest.html">
-<meta property="og:image" content="https://encrypster.github.io/diyora-17-noyabr/preview.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
-<script src="https://cdn.tailwindcss.com/3.4.17"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-<style>
-  [hidden]{display:none!important}
-  *{-webkit-tap-highlight-color:transparent}
-  body{
-    font-family:'Inter',system-ui,sans-serif;
-    background:radial-gradient(circle at 15% 15%,#ffe4e6 0%,#fff1f2 35%,#fdf2f8 68%,#fef3c7 100%) fixed;
-    min-height:100vh;overflow-x:hidden;
-  }
-  .serif{font-family:'Playfair Display',serif}
-  .script{font-family:'Great Vibes',cursive}
-  .glass{
-    background:rgba(255,255,255,.87);
-    backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);
-    border:1.5px solid rgba(251,207,232,.85);
-    box-shadow:0 25px 50px -12px rgba(225,29,72,.16),0 10px 25px -8px rgba(217,119,6,.08),inset 0 1px 0 rgba(255,255,255,.9);
-  }
-  @keyframes enter{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:none}}
-  .enter{animation:enter .55s cubic-bezier(.16,1,.3,1) both}
-  @keyframes floaty{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-7px) rotate(2deg)}}
-  .floaty{animation:floaty 3.4s ease-in-out infinite}
-  @keyframes pulse2{0%,100%{transform:scale(1)}15%{transform:scale(1.16)}30%{transform:scale(1)}45%{transform:scale(1.12)}}
-  .beat{animation:pulse2 1.8s infinite ease-in-out;transform-origin:center}
-  @keyframes drift{0%{transform:translateY(105vh) rotate(0) scale(.8);opacity:0}15%{opacity:.6}85%{opacity:.5}100%{transform:translateY(-10vh) rotate(360deg) scale(1.1);opacity:0}}
-  .ambient{position:fixed;top:0;pointer-events:none;z-index:1;animation:drift linear infinite}
-  @keyframes flip{0%{opacity:0;transform:perspective(900px) rotateX(-25deg) scale(.92)}100%{opacity:1;transform:none}}
-  .flip-in{animation:flip .65s cubic-bezier(.22,1,.36,1) both}
-  .rose-gold{background:linear-gradient(135deg,#fff1f2 0%,#ffe4e6 35%,#fde68a 75%,#fecdd3 100%)}
-  @keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.35)}100%{transform:scale(1)}}
-  .pop{animation:pop .45s cubic-bezier(.34,1.56,.64,1)}
-  @keyframes plus{0%{opacity:0;transform:translateY(6px)}20%{opacity:1}100%{opacity:0;transform:translateY(-26px)}}
-  .plus{position:absolute;right:0;top:-6px;animation:plus 1.2s ease-out forwards;pointer-events:none}
-  @keyframes shakeX{0%,100%{transform:none}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
-  .opt{transition:transform .15s ease,background-color .2s,border-color .2s,opacity .3s}
-  .opt:not([disabled]):active{transform:scale(.985)}
-  .fb-enter{animation:enter .45s cubic-bezier(.16,1,.3,1) both}
-  #fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
-  @media (prefers-reduced-motion:reduce){
-    .ambient{display:none}
-    .floaty,.beat{animation:none}
-    .enter,.flip-in,.fb-enter,.pop{animation-duration:.01s}
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#ffe4e6">
+  <title>Bo‘lajak shifokor kvesti — Diyoram uchun ❤️</title>
+  <meta name="description" content="6 ta savol, faxriy diplom va kechki syurpriz — Diyoram uchun.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bo‘lajak shifokor kvesti 👑">
+  <meta property="og:description" content="6 ta savol, faxriy diplom va kechki syurpriz — Diyoram uchun.">
+  <meta property="og:url" content="https://encrypster.github.io/diyora-17-noyabr/kvest.html">
+  <meta property="og:image" content="https://encrypster.github.io/diyora-17-noyabr/preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+    rel="stylesheet">
+  <style>
+    [hidden] {
+      display: none !important
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: radial-gradient(circle at 15% 15%, #ffe4e6 0%, #fff1f2 35%, #fdf2f8 68%, #fef3c7 100%) fixed;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .serif {
+      font-family: 'Playfair Display', serif
+    }
+
+    .script {
+      font-family: 'Great Vibes', cursive
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, .87);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      border: 1.5px solid rgba(251, 207, 232, .85);
+      box-shadow: 0 25px 50px -12px rgba(225, 29, 72, .16), 0 10px 25px -8px rgba(217, 119, 6, .08), inset 0 1px 0 rgba(255, 255, 255, .9);
+    }
+
+    @keyframes enter {
+      from {
+        opacity: 0;
+        transform: translateY(20px) scale(.97)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .enter {
+      animation: enter .55s cubic-bezier(.16, 1, .3, 1) both
+    }
+
+    @keyframes floaty {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0)
+      }
+
+      50% {
+        transform: translateY(-7px) rotate(2deg)
+      }
+    }
+
+    .floaty {
+      animation: floaty 3.4s ease-in-out infinite
+    }
+
+    @keyframes pulse2 {
+
+      0%,
+      100% {
+        transform: scale(1)
+      }
+
+      15% {
+        transform: scale(1.16)
+      }
+
+      30% {
+        transform: scale(1)
+      }
+
+      45% {
+        transform: scale(1.12)
+      }
+    }
+
+    .beat {
+      animation: pulse2 1.8s infinite ease-in-out;
+      transform-origin: center
+    }
+
+    @keyframes drift {
+      0% {
+        transform: translateY(105vh) rotate(0) scale(.8);
+        opacity: 0
+      }
+
+      15% {
+        opacity: .6
+      }
+
+      85% {
+        opacity: .5
+      }
+
+      100% {
+        transform: translateY(-10vh) rotate(360deg) scale(1.1);
+        opacity: 0
+      }
+    }
+
+    .ambient {
+      position: fixed;
+      top: 0;
+      pointer-events: none;
+      z-index: 1;
+      animation: drift linear infinite
+    }
+
+    @keyframes flip {
+      0% {
+        opacity: 0;
+        transform: perspective(900px) rotateX(-25deg) scale(.92)
+      }
+
+      100% {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .flip-in {
+      animation: flip .65s cubic-bezier(.22, 1, .36, 1) both
+    }
+
+    .rose-gold {
+      background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 35%, #fde68a 75%, #fecdd3 100%)
+    }
+
+    @keyframes pop {
+      0% {
+        transform: scale(1)
+      }
+
+      40% {
+        transform: scale(1.35)
+      }
+
+      100% {
+        transform: scale(1)
+      }
+    }
+
+    .pop {
+      animation: pop .45s cubic-bezier(.34, 1.56, .64, 1)
+    }
+
+    @keyframes plus {
+      0% {
+        opacity: 0;
+        transform: translateY(6px)
+      }
+
+      20% {
+        opacity: 1
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(-26px)
+      }
+    }
+
+    .plus {
+      position: absolute;
+      right: 0;
+      top: -6px;
+      animation: plus 1.2s ease-out forwards;
+      pointer-events: none
+    }
+
+    @keyframes shakeX {
+
+      0%,
+      100% {
+        transform: none
+      }
+
+      25% {
+        transform: translateX(-4px)
+      }
+
+      75% {
+        transform: translateX(4px)
+      }
+    }
+
+    .opt {
+      transition: transform .15s ease, background-color .2s, border-color .2s, opacity .3s
+    }
+
+    .opt:not([disabled]):active {
+      transform: scale(.985)
+    }
+
+    .fb-enter {
+      animation: enter .45s cubic-bezier(.16, 1, .3, 1) both
+    }
+
+    #fx {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 50
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      .ambient {
+        display: none
+      }
+
+      .floaty,
+      .beat {
+        animation: none
+      }
+
+      .enter,
+      .flip-in,
+      .fb-enter,
+      .pop {
+        animation-duration: .01s
+      }
+    }
+  </style>
 </head>
-<body class="text-rose-950 antialiased selection:bg-rose-200 selection:text-rose-900 flex items-center justify-center p-4 sm:p-6 relative">
-<a href="./" aria-label="Barcha sovg‘alar" style="position:fixed;z-index:80;left:12px;top:max(12px,env(safe-area-inset-top));padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.85);border:1px solid rgba(212,175,55,.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font:600 12px/1 Inter,system-ui,sans-serif;color:#8B1E24;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,.08)">‹ Sovg‘alar</a>
 
-<div id="ambient" aria-hidden="true"></div>
-<canvas id="fx" aria-hidden="true"></canvas>
+<body
+  class="text-rose-950 antialiased selection:bg-rose-200 selection:text-rose-900 flex items-center justify-center p-4 sm:p-6 relative">
+  <a href="./" aria-label="Barcha sovg‘alar"
+    style="position:fixed;z-index:80;left:12px;top:max(12px,env(safe-area-inset-top));padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.85);border:1px solid rgba(212,175,55,.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font:600 12px/1 Inter,system-ui,sans-serif;color:#8B1E24;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,.08)">‹
+    Sovg‘alar</a>
 
-<div id="toast" hidden class="fixed top-4 left-1/2 -translate-x-1/2 z-[60] px-5 py-2.5 rounded-full bg-rose-900/95 text-white text-xs sm:text-sm font-semibold shadow-xl backdrop-blur-md"></div>
+  <div id="ambient" aria-hidden="true"></div>
+  <canvas id="fx" aria-hidden="true"></canvas>
 
-<main class="w-full max-w-lg mx-auto relative z-10 py-4">
+  <div id="toast" hidden
+    class="fixed top-4 left-1/2 -translate-x-1/2 z-[60] px-5 py-2.5 rounded-full bg-rose-900/95 text-white text-xs sm:text-sm font-semibold shadow-xl backdrop-blur-md">
+  </div>
 
-  <!-- ============ 1. WELCOME ============ -->
-  <section id="welcome" class="glass rounded-[32px] p-6 sm:p-9 text-center enter relative overflow-hidden">
-    <div class="absolute -top-12 -left-12 w-36 h-36 bg-rose-300/30 rounded-full blur-2xl pointer-events-none"></div>
-    <div class="absolute -bottom-12 -right-12 w-36 h-36 bg-amber-200/40 rounded-full blur-2xl pointer-events-none"></div>
+  <main class="w-full max-w-lg mx-auto relative z-10 py-4">
 
-    <div class="relative inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-rose-50 to-pink-50 border border-rose-200/90 text-rose-600 text-[11px] sm:text-xs font-bold tracking-widest uppercase mb-5 shadow-sm">
-      <span>🌹</span><span>17-noyabr • Talabalar kuni</span>
-    </div>
-
-    <div class="relative w-24 h-24 mx-auto mb-5 rounded-full bg-gradient-to-br from-rose-400 via-pink-500 to-amber-400 p-1 shadow-xl shadow-rose-500/25 floaty">
-      <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-        <svg class="w-12 h-12 text-rose-500 beat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/>
-          <path d="M8 15v1a6 6 0 0 0 6 6 6 6 0 0 0 6-6v-4"/>
-          <path d="M20 8.5c-.8-.8-2-.8-2.8 0l-.2.2-.2-.2c-.8-.8-2-.8-2.8 0-.8.8-.8 2 0 2.8l3 3 3-3c.8-.8.8-2 0-2.8z" fill="currentColor"/>
-        </svg>
-      </div>
-    </div>
-
-    <p class="relative script text-[34px] sm:text-4xl text-rose-500 mb-0.5 leading-tight">Qalbi mehrga to‘la malikam uchun</p>
-    <h1 class="relative serif text-[32px] sm:text-4xl font-bold text-rose-950 tracking-tight leading-tight mb-3">Bo‘lajak shifokor kvesti</h1>
-    <p class="relative text-sm sm:text-base font-medium text-rose-800/80 mb-6 leading-relaxed">
-      Bayraming muborak, <span class="text-rose-600 font-bold">Diyora</span>! Sening go‘zal qalbing va sharafli kasbingga atalgan kichik romantik sinov — bir oz tibbiyot, ko‘proq muhabbat.
-    </p>
-
-    <div class="relative bg-gradient-to-br from-rose-50/90 via-white/80 to-pink-50/90 border border-rose-200/70 rounded-2xl p-4 mb-7 text-left space-y-2.5 text-xs sm:text-sm text-rose-900 shadow-sm">
-      <div class="flex items-center gap-3"><span class="text-base">💌</span><span><b>6 ta savol:</b> tibbiyot va mehr uyg‘unligi</span></div>
-      <div class="flex items-center gap-3"><span class="text-base">✨</span><span><b>Baholash:</b> har bir javob uchun mehr ballari</span></div>
-      <div class="flex items-center gap-3"><span class="text-base">🎁</span><span><b>Yakunda:</b> faxriy diplom va kechki syurpriz</span></div>
-    </div>
-
-    <button id="start-btn" type="button" class="relative w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-rose-500 via-pink-500 to-rose-600 active:scale-[0.98] text-white font-bold text-base sm:text-lg shadow-lg shadow-rose-500/30 transition-all">
-      Sayohatni boshlash 💖
-    </button>
-  </section>
-
-  <!-- ============ 2. QUIZ ============ -->
-  <section id="quiz" hidden class="glass rounded-[32px] p-6 sm:p-8">
-    <div class="mb-6">
-      <div class="flex items-center justify-between text-xs font-bold text-rose-700 mb-2.5">
-        <span id="q-counter" class="bg-rose-100/90 text-rose-700 px-3.5 py-1 rounded-full">1-savol / 6</span>
-        <span class="relative text-pink-600 flex items-center gap-1.5">
-          <span>Mehr balli:</span>
-          <span id="score" class="tabular-nums text-rose-600 text-sm font-black inline-block">0</span>
-        </span>
-      </div>
-      <div class="w-full h-2.5 bg-rose-100 rounded-full overflow-hidden">
-        <div id="progress" class="h-full bg-gradient-to-r from-rose-400 via-pink-500 to-amber-400 rounded-full transition-all duration-500" style="width:0%"></div>
-      </div>
-    </div>
-
-    <div id="q-body">
-      <p id="q-kind" class="text-[11px] font-bold uppercase tracking-wider mb-2"></p>
-      <h2 id="q-text" class="serif text-xl sm:text-2xl font-bold text-rose-950 leading-snug mb-6"></h2>
-      <div id="options" class="space-y-3 mb-5" role="group"></div>
-    </div>
-
-    <div id="feedback" hidden class="rounded-2xl p-4 mb-5 border text-xs sm:text-sm leading-relaxed" aria-live="polite">
-      <div class="flex items-start gap-3">
-        <span id="fb-icon" class="text-xl shrink-0">🌹</span>
-        <div><p id="fb-title" class="font-extrabold mb-0.5"></p><p id="fb-text" class="font-medium"></p></div>
-      </div>
-    </div>
-
-    <button id="next-btn" type="button" hidden class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-rose-500 via-pink-500 to-rose-600 active:scale-[0.98] text-white font-bold text-sm sm:text-base shadow-md shadow-rose-500/25 transition-all flex items-center justify-center gap-2">
-      <span id="next-text">Keyingi savol</span><span>→</span>
-    </button>
-    <p class="hidden sm:block text-center text-[11px] text-rose-400 mt-3">Klaviatura: A–D yoki 1–4, keyin Enter</p>
-  </section>
-
-  <!-- ============ 3. FINALE ============ -->
-  <section id="finale" hidden class="space-y-5">
-    <div class="glass rounded-[32px] p-6 sm:p-8 relative overflow-hidden border-2 border-rose-200/90 text-center enter">
-      <div class="absolute inset-3 rounded-[24px] border border-amber-300/50 pointer-events-none"></div>
-      <div class="absolute top-4 left-4 text-rose-300 text-lg pointer-events-none">❀</div>
-      <div class="absolute top-4 right-4 text-rose-300 text-lg pointer-events-none">❀</div>
-      <div class="absolute bottom-4 left-4 text-rose-300 text-lg pointer-events-none">❀</div>
-      <div class="absolute bottom-4 right-4 text-rose-300 text-lg pointer-events-none">❀</div>
-
-      <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-gradient-to-br from-rose-400 via-pink-500 to-amber-400 flex items-center justify-center text-3xl shadow-lg border-4 border-white">👑</div>
-      <p class="text-[11px] font-extrabold tracking-[.22em] uppercase text-rose-500 mb-1">17-noyabr • Talabalar kuni muborak</p>
-      <h2 class="serif text-xl sm:text-2xl font-bold text-rose-950 tracking-tight mb-4">QALBIMNING ENG GO‘ZAL SHIFOKORI</h2>
-
-      <div class="py-3.5 px-4 rounded-2xl bg-gradient-to-r from-rose-50 via-white to-pink-50 border border-rose-200/80 mb-4 shadow-sm">
-        <p class="text-xs text-rose-500 font-semibold mb-0.5">Ushbu faxriy yorliq egasi:</p>
-        <p class="script text-[44px] sm:text-5xl text-rose-600 leading-tight">Azizam Diyora</p>
-        <p class="text-[11px] text-rose-400 font-semibold">TDTU • 5-kurs talabasi</p>
+    <!-- ============ 1. WELCOME ============ -->
+    <section id="welcome" class="glass rounded-[32px] p-6 sm:p-9 text-center enter relative overflow-hidden">
+      <div class="absolute -top-12 -left-12 w-36 h-36 bg-rose-300/30 rounded-full blur-2xl pointer-events-none"></div>
+      <div class="absolute -bottom-12 -right-12 w-36 h-36 bg-amber-200/40 rounded-full blur-2xl pointer-events-none">
       </div>
 
-      <p class="text-xs sm:text-sm text-rose-900/90 leading-relaxed font-medium mb-4">
-        Xalqaro talabalar kuni munosabati bilan eng mashaqqatli va sharafli kasb yo‘lidagi matonating, ham zakovatli, ham mehrli qalbing hamda hayotimga olib kirgan cheksiz nuring uchun <span class="font-extrabold text-rose-600">«Dunyodagi eng betakror bo‘lajak shifokor»</span> unvoni bilan taqdirlanasan! ❤️
+      <div
+        class="relative inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-rose-50 to-pink-50 border border-rose-200/90 text-rose-600 text-[11px] sm:text-xs font-bold tracking-widest uppercase mb-5 shadow-sm">
+        <span>🌹</span><span>17-noyabr • Talabalar kuni</span>
+      </div>
+
+      <div
+        class="relative w-24 h-24 mx-auto mb-5 rounded-full bg-gradient-to-br from-rose-400 via-pink-500 to-amber-400 p-1 shadow-xl shadow-rose-500/25 floaty">
+        <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+          <svg class="w-12 h-12 text-rose-500 beat" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3" />
+            <path d="M8 15v1a6 6 0 0 0 6 6 6 6 0 0 0 6-6v-4" />
+            <path d="M20 8.5c-.8-.8-2-.8-2.8 0l-.2.2-.2-.2c-.8-.8-2-.8-2.8 0-.8.8-.8 2 0 2.8l3 3 3-3c.8-.8.8-2 0-2.8z"
+              fill="currentColor" />
+          </svg>
+        </div>
+      </div>
+
+      <p class="relative script text-[34px] sm:text-4xl text-rose-500 mb-0.5 leading-tight">Qalbi mehrga to‘la malikam
+        uchun</p>
+      <h1 class="relative serif text-[32px] sm:text-4xl font-bold text-rose-950 tracking-tight leading-tight mb-3">
+        Bo‘lajak shifokor kvesti</h1>
+      <p class="relative text-sm sm:text-base font-medium text-rose-800/80 mb-6 leading-relaxed">
+        Bayraming muborak, <span class="text-rose-600 font-bold">Diyoram</span>! Sening go‘zal qalbing va sharafli
+        kasbingga atalgan kichik romantik sinov — bir oz tibbiyot, ko‘proq muhabbat.
       </p>
 
-      <div class="inline-flex items-baseline gap-2 px-4 py-2 rounded-2xl bg-white/80 border border-rose-200 mb-5">
-        <span class="text-xs font-bold text-rose-500">Yakuniy mehr balli:</span>
-        <span id="final-score" class="serif text-2xl font-bold text-rose-600 tabular-nums">0</span>
-        <span id="final-note" class="text-[11px] text-rose-400"></span>
+      <div
+        class="relative bg-gradient-to-br from-rose-50/90 via-white/80 to-pink-50/90 border border-rose-200/70 rounded-2xl p-4 mb-7 text-left space-y-2.5 text-xs sm:text-sm text-rose-900 shadow-sm">
+        <div class="flex items-center gap-3"><span class="text-base">💌</span><span><b>6 ta savol:</b> tibbiyot va mehr
+            uyg‘unligi</span></div>
+        <div class="flex items-center gap-3"><span class="text-base">✨</span><span><b>Baholash:</b> har bir javob uchun
+            mehr ballari</span></div>
+        <div class="flex items-center gap-3"><span class="text-base">🎁</span><span><b>Yakunda:</b> faxriy diplom va
+            kechki syurpriz</span></div>
       </div>
 
-      <div class="flex items-center justify-between pt-4 border-t border-dashed border-rose-200 text-xs text-rose-700">
-        <div class="text-left">
-          <p class="font-bold">Sana: 17.11.2026</p>
-          <p class="text-[11px] text-rose-500">Imzo: <span class="script text-lg text-rose-600">Alishering</span></p>
+      <button id="start-btn" type="button"
+        class="relative w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-rose-500 via-pink-500 to-rose-600 active:scale-[0.98] text-white font-bold text-base sm:text-lg shadow-lg shadow-rose-500/30 transition-all">
+        Sayohatni boshlash 💖
+      </button>
+    </section>
+
+    <!-- ============ 2. QUIZ ============ -->
+    <section id="quiz" hidden class="glass rounded-[32px] p-6 sm:p-8">
+      <div class="mb-6">
+        <div class="flex items-center justify-between text-xs font-bold text-rose-700 mb-2.5">
+          <span id="q-counter" class="bg-rose-100/90 text-rose-700 px-3.5 py-1 rounded-full">1-savol / 6</span>
+          <span class="relative text-pink-600 flex items-center gap-1.5">
+            <span>Mehr balli:</span>
+            <span id="score" class="tabular-nums text-rose-600 text-sm font-black inline-block">0</span>
+          </span>
         </div>
-        <div class="px-3.5 py-1.5 rounded-full border-2 border-rose-500/80 text-rose-600 font-extrabold text-[11px] uppercase tracking-wider -rotate-3 bg-rose-50/80">❤️ 100% sevgi bilan</div>
-      </div>
-    </div>
-
-    <div class="glass rounded-[28px] p-5 sm:p-6 text-center enter" style="animation-delay:.15s">
-      <div id="v-trigger">
-        <p class="text-xs sm:text-sm font-semibold text-rose-800 mb-3">Bayramingni yanada unutilmas qilish uchun kichik syurprizim bor:</p>
-        <button id="v-btn" type="button" class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-rose-500 via-pink-500 to-amber-500 active:scale-[0.98] text-white font-bold text-base shadow-lg shadow-rose-500/25 transition-all">Sovg‘a taklifnomasini ochish 🎁</button>
-      </div>
-      <div id="voucher" hidden class="rose-gold rounded-2xl p-5 sm:p-6 text-rose-950 border-2 border-rose-300 shadow-inner text-left">
-        <div class="flex items-center justify-between border-b border-dashed border-rose-400/40 pb-3 mb-3 gap-2">
-          <span class="text-xs font-black uppercase tracking-widest text-rose-700 flex items-center gap-1.5"><span>🌹</span> Maxsus taklifnoma</span>
-          <span class="text-[11px] font-bold bg-white/85 px-3 py-0.5 rounded-full text-rose-600 shadow-sm">Faqat sen uchun</span>
-        </div>
-        <p class="serif text-base sm:text-lg font-bold text-rose-950 leading-relaxed mb-3">Bugun kechqurun barcha konspekt va darslarga tanaffus! Seni o‘zing istagan shinam maskanda romantik kechki ovqat, mazali shirinlik va gullar kutmoqda.</p>
-        <div class="bg-white/75 rounded-xl p-3 text-xs font-bold text-rose-900 flex items-center justify-between gap-2">
-          <span>Vaqt va joy:</span><span class="text-rose-600 text-right">Bugun, 17-noyabr • sen tanlagan joyda ❤️</span>
+        <div class="w-full h-2.5 bg-rose-100 rounded-full overflow-hidden">
+          <div id="progress"
+            class="h-full bg-gradient-to-r from-rose-400 via-pink-500 to-amber-400 rounded-full transition-all duration-500"
+            style="width:0%"></div>
         </div>
       </div>
-    </div>
 
-    <div class="flex flex-wrap items-center justify-center gap-2.5 pt-1 enter" style="animation-delay:.3s">
-      <button id="save-btn" type="button" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-400 to-rose-500 text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-95">🖼️ Diplomni rasm qilib saqlash</button>
-      <button id="restart-btn" type="button" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-white/85 hover:bg-white text-rose-700 font-bold text-xs sm:text-sm border border-rose-200 shadow-sm transition-all active:scale-95">🔄 Qayta o‘tish</button>
-      <button id="share-btn" type="button" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs sm:text-sm shadow-sm transition-all active:scale-95">💌 Ulashish</button>
-    </div>
-  </section>
-</main>
+      <div id="q-body">
+        <p id="q-kind" class="text-[11px] font-bold uppercase tracking-wider mb-2"></p>
+        <h2 id="q-text" class="serif text-xl sm:text-2xl font-bold text-rose-950 leading-snug mb-6"></h2>
+        <div id="options" class="space-y-3 mb-5" role="group"></div>
+      </div>
 
-<!-- diploma image modal -->
-<div id="modal" hidden class="fixed inset-0 z-[70] bg-rose-950/70 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Diplom rasmi">
-  <div class="bg-white rounded-3xl p-4 max-w-sm w-full shadow-2xl enter">
-    <img id="dip-img" alt="Faxriy diplom — Azizam Diyora" class="w-full rounded-2xl border border-rose-100">
-    <p class="text-[11px] text-rose-500 text-center mt-2">Telefonda: rasmni bosib turing → «Saqlash»</p>
-    <div class="flex gap-2 mt-3">
-      <a id="dip-dl" download="Diyora-faxriy-diplom.png" class="flex-1 text-center py-2.5 rounded-xl bg-rose-600 text-white font-bold text-sm">Yuklab olish</a>
-      <button id="modal-close" type="button" class="flex-1 py-2.5 rounded-xl bg-rose-50 text-rose-700 font-bold text-sm">Yopish</button>
+      <div id="feedback" hidden class="rounded-2xl p-4 mb-5 border text-xs sm:text-sm leading-relaxed"
+        aria-live="polite">
+        <div class="flex items-start gap-3">
+          <span id="fb-icon" class="text-xl shrink-0">🌹</span>
+          <div>
+            <p id="fb-title" class="font-extrabold mb-0.5"></p>
+            <p id="fb-text" class="font-medium"></p>
+          </div>
+        </div>
+      </div>
+
+      <button id="next-btn" type="button" hidden
+        class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-rose-500 via-pink-500 to-rose-600 active:scale-[0.98] text-white font-bold text-sm sm:text-base shadow-md shadow-rose-500/25 transition-all flex items-center justify-center gap-2">
+        <span id="next-text">Keyingi savol</span><span>→</span>
+      </button>
+      <p class="hidden sm:block text-center text-[11px] text-rose-400 mt-3">Klaviatura: A–D yoki 1–4, keyin Enter</p>
+    </section>
+
+    <!-- ============ 3. FINALE ============ -->
+    <section id="finale" hidden class="space-y-5">
+      <div
+        class="glass rounded-[32px] p-6 sm:p-8 relative overflow-hidden border-2 border-rose-200/90 text-center enter">
+        <div class="absolute inset-3 rounded-[24px] border border-amber-300/50 pointer-events-none"></div>
+        <div class="absolute top-4 left-4 text-rose-300 text-lg pointer-events-none">❀</div>
+        <div class="absolute top-4 right-4 text-rose-300 text-lg pointer-events-none">❀</div>
+        <div class="absolute bottom-4 left-4 text-rose-300 text-lg pointer-events-none">❀</div>
+        <div class="absolute bottom-4 right-4 text-rose-300 text-lg pointer-events-none">❀</div>
+
+        <div
+          class="w-16 h-16 mx-auto mb-3 rounded-full bg-gradient-to-br from-rose-400 via-pink-500 to-amber-400 flex items-center justify-center text-3xl shadow-lg border-4 border-white">
+          👑</div>
+        <p class="text-[11px] font-extrabold tracking-[.22em] uppercase text-rose-500 mb-1">17-noyabr • Talabalar kuni
+          muborak</p>
+        <h2 class="serif text-xl sm:text-2xl font-bold text-rose-950 tracking-tight mb-4">QALBIMNING ENG GO‘ZAL
+          SHIFOKORI</h2>
+
+        <div
+          class="py-3.5 px-4 rounded-2xl bg-gradient-to-r from-rose-50 via-white to-pink-50 border border-rose-200/80 mb-4 shadow-sm">
+          <p class="text-xs text-rose-500 font-semibold mb-0.5">Ushbu faxriy yorliq egasi:</p>
+          <p class="script text-[44px] sm:text-5xl text-rose-600 leading-tight">Azizam Diyora</p>
+          <p class="text-[11px] text-rose-400 font-semibold">TDTU • 5-kurs talabasi</p>
+        </div>
+
+        <p class="text-xs sm:text-sm text-rose-900/90 leading-relaxed font-medium mb-4">
+          Xalqaro talabalar kuni munosabati bilan eng mashaqqatli va sharafli kasb yo‘lidagi matonating, ham zakovatli,
+          ham mehrli qalbing hamda hayotimga olib kirgan cheksiz nuring uchun <span
+            class="font-extrabold text-rose-600">«Dunyodagi eng betakror bo‘lajak shifokor»</span> unvoni bilan
+          taqdirlanasan! ❤️
+        </p>
+
+        <div class="inline-flex items-baseline gap-2 px-4 py-2 rounded-2xl bg-white/80 border border-rose-200 mb-5">
+          <span class="text-xs font-bold text-rose-500">Yakuniy mehr balli:</span>
+          <span id="final-score" class="serif text-2xl font-bold text-rose-600 tabular-nums">0</span>
+          <span id="final-note" class="text-[11px] text-rose-400"></span>
+        </div>
+
+        <div
+          class="flex items-center justify-between pt-4 border-t border-dashed border-rose-200 text-xs text-rose-700">
+          <div class="text-left">
+            <p class="font-bold">Sana: 17.11.2026</p>
+            <p class="text-[11px] text-rose-500">Imzo: <span class="script text-lg text-rose-600">Alishering</span></p>
+          </div>
+          <div
+            class="px-3.5 py-1.5 rounded-full border-2 border-rose-500/80 text-rose-600 font-extrabold text-[11px] uppercase tracking-wider -rotate-3 bg-rose-50/80">
+            ❤️ 100% sevgi bilan</div>
+        </div>
+      </div>
+
+      <div class="glass rounded-[28px] p-5 sm:p-6 text-center enter" style="animation-delay:.15s">
+        <div id="v-trigger">
+          <p class="text-xs sm:text-sm font-semibold text-rose-800 mb-3">Bayramingni yanada unutilmas qilish uchun
+            kichik syurprizim bor:</p>
+          <button id="v-btn" type="button"
+            class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-rose-500 via-pink-500 to-amber-500 active:scale-[0.98] text-white font-bold text-base shadow-lg shadow-rose-500/25 transition-all">Sovg‘a
+            taklifnomasini ochish 🎁</button>
+        </div>
+        <div id="voucher" hidden
+          class="rose-gold rounded-2xl p-5 sm:p-6 text-rose-950 border-2 border-rose-300 shadow-inner text-left">
+          <div class="flex items-center justify-between border-b border-dashed border-rose-400/40 pb-3 mb-3 gap-2">
+            <span
+              class="text-xs font-black uppercase tracking-widest text-rose-700 flex items-center gap-1.5"><span>🌹</span>
+              Maxsus taklifnoma</span>
+            <span class="text-[11px] font-bold bg-white/85 px-3 py-0.5 rounded-full text-rose-600 shadow-sm">Faqat sen
+              uchun</span>
+          </div>
+          <p class="serif text-base sm:text-lg font-bold text-rose-950 leading-relaxed mb-3">Bugun kechqurun barcha
+            konspekt va darslarga tanaffus! Seni o‘zing istagan shinam maskanda romantik kechki ovqat, mazali shirinlik
+            va gullar kutmoqda.</p>
+          <div
+            class="bg-white/75 rounded-xl p-3 text-xs font-bold text-rose-900 flex items-center justify-between gap-2">
+            <span>Vaqt va joy:</span><span class="text-rose-600 text-right">Bugun, 17-noyabr • sen tanlagan joyda
+              ❤️</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-2.5 pt-1 enter" style="animation-delay:.3s">
+        <button id="save-btn" type="button"
+          class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-gradient-to-r from-amber-400 to-rose-500 text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-95">🖼️
+          Diplomni rasm qilib saqlash</button>
+        <button id="restart-btn" type="button"
+          class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-white/85 hover:bg-white text-rose-700 font-bold text-xs sm:text-sm border border-rose-200 shadow-sm transition-all active:scale-95">🔄
+          Qayta o‘tish</button>
+        <button id="share-btn" type="button"
+          class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs sm:text-sm shadow-sm transition-all active:scale-95">💌
+          Ulashish</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- diploma image modal -->
+  <div id="modal" hidden
+    class="fixed inset-0 z-[70] bg-rose-950/70 backdrop-blur-sm flex items-center justify-center p-4" role="dialog"
+    aria-modal="true" aria-label="Diplom rasmi">
+    <div class="bg-white rounded-3xl p-4 max-w-sm w-full shadow-2xl enter">
+      <img id="dip-img" alt="Faxriy diplom — Azizam Diyora" class="w-full rounded-2xl border border-rose-100">
+      <p class="text-[11px] text-rose-500 text-center mt-2">Telefonda: rasmni bosib turing → «Saqlash»</p>
+      <div class="flex gap-2 mt-3">
+        <a id="dip-dl" download="Diyora-faxriy-diplom.png"
+          class="flex-1 text-center py-2.5 rounded-xl bg-rose-600 text-white font-bold text-sm">Yuklab olish</a>
+        <button id="modal-close" type="button"
+          class="flex-1 py-2.5 rounded-xl bg-rose-50 text-rose-700 font-bold text-sm">Yopish</button>
+      </div>
     </div>
   </div>
-</div>
 
-<script>
-(() => {
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const $ = (id) => document.getElementById(id);
-  const vibrate = (p) => { try { navigator.vibrate && navigator.vibrate(p); } catch (e) {} };
+  <script>
+    (() => {
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const $ = (id) => document.getElementById(id);
+      const vibrate = (p) => { try { navigator.vibrate && navigator.vibrate(p); } catch (e) { } };
 
-  /* ---------- ambient petals ---------- */
-  if (!reduce) {
-    const sym = ['🌸','❤️','✨','🌹','💖'];
-    for (let i = 0; i < 14; i++) {
-      const el = document.createElement('span');
-      el.className = 'ambient text-sm sm:text-base select-none';
-      el.textContent = sym[i % sym.length];
-      el.style.left = (Math.random() * 96) + '%';
-      el.style.animationDuration = (11 + Math.random() * 10) + 's';
-      el.style.animationDelay = (-Math.random() * 15) + 's';
-      $('ambient').appendChild(el);
-    }
-  }
+      /* ---------- ambient petals ---------- */
+      if (!reduce) {
+        const sym = ['🌸', '❤️', '✨', '🌹', '💖'];
+        for (let i = 0; i < 14; i++) {
+          const el = document.createElement('span');
+          el.className = 'ambient text-sm sm:text-base select-none';
+          el.textContent = sym[i % sym.length];
+          el.style.left = (Math.random() * 96) + '%';
+          el.style.animationDuration = (11 + Math.random() * 10) + 's';
+          el.style.animationDelay = (-Math.random() * 15) + 's';
+          $('ambient').appendChild(el);
+        }
+      }
 
-  /* ---------- questions ---------- */
-  // kind: 'love' = romantik savol, 'med' = haqiqiy tibbiy savol (to‘g‘ri javobi bor)
-  const Q = [
-    { kind: 'love',
-      q: 'Diyorani ko‘rganda Alisherning yurak urishi daqiqasiga 148 tagacha tezlashadi. Tibbiyotda bu holat qanday ataladi?',
-      o: { A: 'Oddiy sinus taxikardiya', B: 'Bir ko‘rishda — va har ko‘rishda — qayta sevib qolish sindromi', C: 'Kofe ta’siri', D: 'Oddiy hayajon' },
-      best: 'B',
-      fb: { A: 'Oddiy taxikardiya emas! Bu — faqat Diyoraning tabassumiga xos bo‘lgan B variantidagi go‘zal sindrom ❤️',
+      /* ---------- questions ---------- */
+      // kind: 'love' = romantik savol, 'med' = haqiqiy tibbiy savol (to‘g‘ri javobi bor)
+      const Q = [
+        {
+          kind: 'love',
+          q: 'Diyorani ko‘rganda Alisherning yurak urishi daqiqasiga 148 tagacha tezlashadi. Tibbiyotda bu holat qanday ataladi?',
+          o: { A: 'Oddiy sinus taxikardiya', B: 'Bir ko‘rishda — va har ko‘rishda — qayta sevib qolish sindromi', C: 'Kofe ta’siri', D: 'Oddiy hayajon' },
+          best: 'B',
+          fb: {
+            A: 'Oddiy taxikardiya emas! Bu — faqat Diyoraning tabassumiga xos bo‘lgan B variantidagi go‘zal sindrom ❤️',
             B: 'Mutlaqo aniq tashxis! Sening birgina nigohing va tabassuming yurakni har safar yangidan urishga majbur qiladi 💖',
             C: 'Hech qanday kofe bunchalik kuchli ta’sir qila olmaydi — asosiy sababchi B variantidagi sening mehring!',
-            D: 'Albatta hayajon, lekin eng yoqimli hayajon — B variantidagi cheksiz muhabbat!' } },
-    { kind: 'med',
-      q: 'Lotin tilida «yurak» qanday ataladi?',
-      o: { A: 'Pulmo', B: 'Cor', C: 'Hepar', D: 'Ren' },
-      best: 'B',
-      fb: { A: 'Pulmo — o‘pka. To‘g‘risi B: Cor. Mening cor’im esa allaqachon senga tegishli 🙂',
+            D: 'Albatta hayajon, lekin eng yoqimli hayajon — B variantidagi cheksiz muhabbat!'
+          }
+        },
+        {
+          kind: 'med',
+          q: 'Lotin tilida «yurak» qanday ataladi?',
+          o: { A: 'Pulmo', B: 'Cor', C: 'Hepar', D: 'Ren' },
+          best: 'B',
+          fb: {
+            A: 'Pulmo — o‘pka. To‘g‘risi B: Cor. Mening cor’im esa allaqachon senga tegishli 🙂',
             B: 'To‘g‘ri, bo‘lajak doktor! Cor — yurak. Mening cor’im esa allaqachon senga tegishli ❤️',
             C: 'Hepar — jigar. To‘g‘risi B: Cor. Lekin «jigarim» deb atashim ham mumkin 😄',
-            D: 'Ren — buyrak. To‘g‘risi B: Cor. Sessiyadan charchagan bo‘lsang kerak — bugun dam ol 🌹' } },
-    { kind: 'love',
-      q: 'Bemorda o‘tkir «Diyora-defitsit» (sog‘inch) holati kuzatilmoqda. Eng shifobaxsh muolaja qaysi?',
-      o: { A: 'Issiq qahva va shirinlik terapiyasi', B: 'Yulduzlar ostida kechki sayr va bir dasta gul', C: 'Ikkalasi ham + yonma-yon samimiy suhbat (kompleks terapiya)', D: 'Ko‘proq dam olish' },
-      best: 'C',
-      fb: { A: 'Qahva va shirinlik albatta kerak, lekin kechki sayr va suhbat bilan birga (C varianti) haqiqiy mo‘jiza bo‘ladi!',
+            D: 'Ren — buyrak. To‘g‘risi B: Cor. Sessiyadan charchagan bo‘lsang kerak — bugun dam ol 🌹'
+          }
+        },
+        {
+          kind: 'love',
+          q: 'Bemorda o‘tkir «Diyora-defitsit» (sog‘inch) holati kuzatilmoqda. Eng shifobaxsh muolaja qaysi?',
+          o: { A: 'Issiq qahva va shirinlik terapiyasi', B: 'Yulduzlar ostida kechki sayr va bir dasta gul', C: 'Ikkalasi ham + yonma-yon samimiy suhbat (kompleks terapiya)', D: 'Ko‘proq dam olish' },
+          best: 'C',
+          fb: {
+            A: 'Qahva va shirinlik albatta kerak, lekin kechki sayr va suhbat bilan birga (C varianti) haqiqiy mo‘jiza bo‘ladi!',
             B: 'Juda romantik tanlov! Bunga bir finjon issiq qahva ham qo‘shilsa (C varianti) — mukammal retsept!',
             C: 'Eng shifobaxsh retsept! Yoningda o‘tgan har bir daqiqa — har qanday charchoqni oluvchi eng kuchli dori 🌹',
-            D: 'Haqiqiy dam olish — C variantidagidek birga sayr qilish va shirin suhbat!' } },
-    { kind: 'med',
-      q: 'Kattalarda tinch holatdagi me’yoriy yurak urish tezligi qancha?',
-      o: { A: '40–60 zarba/daqiqa', B: '60–100 zarba/daqiqa', C: '100–140 zarba/daqiqa', D: '148 — Diyora yonida bo‘lganda' },
-      best: 'B',
-      fb: { A: '40–60 — bu bradikardiyaga yaqin. To‘g‘risi B: 60–100. Alisherda esa bunday holat kuzatilmaydi 😄',
+            D: 'Haqiqiy dam olish — C variantidagidek birga sayr qilish va shirin suhbat!'
+          }
+        },
+        {
+          kind: 'med',
+          q: 'Kattalarda tinch holatdagi me’yoriy yurak urish tezligi qancha?',
+          o: { A: '40–60 zarba/daqiqa', B: '60–100 zarba/daqiqa', C: '100–140 zarba/daqiqa', D: '148 — Diyora yonida bo‘lganda' },
+          best: 'B',
+          fb: {
+            A: '40–60 — bu bradikardiyaga yaqin. To‘g‘risi B: 60–100. Alisherda esa bunday holat kuzatilmaydi 😄',
             B: 'A’lo! 60–100 zarba/daqiqa. D varianti esa — faqat bitta bemorda, Alisherda uchraydigan klinik istisno 😄',
             C: '100 dan yuqorisi taxikardiya. To‘g‘risi B: 60–100. Lekin seni ko‘rganda bu me’yor ishlamaydi 💓',
-            D: 'Klinik jihatdan — noto‘g‘ri, romantik jihatdan — 100% to‘g‘ri 😄 Me’yor: B, 60–100.' } },
-    { kind: 'love',
-      q: '17-noyabr — Talabalar kunida bo‘lajak shifokorimizga qanday kun tartibi buyuriladi?',
-      o: { A: 'Qalin anatomiya kitoblarini bugunga yopib qo‘yish', B: 'O‘zini haqiqiy malikadek his qilish va tabassum qilish', C: 'Barcha erkalik va tilaklarining bajarilishiga ruxsat', D: 'Yuqoridagi barcha bandlar qat’iy bajarilsin!' },
-      best: 'D',
-      fb: { A: 'Kitoblar ertagacha dam olsin! Bugun esa D variantidagi barcha bandlar sen uchun amal qiladi 😊',
+            D: 'Klinik jihatdan — noto‘g‘ri, romantik jihatdan — 100% to‘g‘ri 😄 Me’yor: B, 60–100.'
+          }
+        },
+        {
+          kind: 'love',
+          q: '17-noyabr — Talabalar kunida bo‘lajak shifokorimizga qanday kun tartibi buyuriladi?',
+          o: { A: 'Qalin anatomiya kitoblarini bugunga yopib qo‘yish', B: 'O‘zini haqiqiy malikadek his qilish va tabassum qilish', C: 'Barcha erkalik va tilaklarining bajarilishiga ruxsat', D: 'Yuqoridagi barcha bandlar qat’iy bajarilsin!' },
+          best: 'D',
+          fb: {
+            A: 'Kitoblar ertagacha dam olsin! Bugun esa D variantidagi barcha bandlar sen uchun amal qiladi 😊',
             B: 'Sen har kuni malikasan, bugun esa bayraming sharafiga D variantidagi barcha imtiyozlar senga tegishli!',
             C: 'Bugun barcha tilaklaring — qonun! D varianti — bayram kunining asosiy protokoli 👑',
-            D: 'Buyruq tasdiqlandi! Bugun faqat quvonch, tabassum va sening barcha orzularing kuni 🎉🌹' } },
-    { kind: 'love',
-      q: 'Yakuniy konsilium xulosasi: hayotimning eng yorqin nuri va kelajakdagi eng zo‘r shifokor kim?',
-      o: { A: 'Albatta, Diyora!', B: 'Hech shubhasiz, mening Diyoram!', C: 'Yuragimning egasi — Diyora!', D: 'Har bir nafasimda va har bir variantda — faqat Diyora!' },
-      best: 'D',
-      fb: { A: 'Albatta, Diyora! Har bir variantda va har bir yurak urishimda faqat sening isming bor ❤️',
+            D: 'Buyruq tasdiqlandi! Bugun faqat quvonch, tabassum va sening barcha orzularing kuni 🎉🌹'
+          }
+        },
+        {
+          kind: 'love',
+          q: 'Yakuniy konsilium xulosasi: hayotimning eng yorqin nuri va kelajakdagi eng zo‘r shifokor kim?',
+          o: { A: 'Albatta, Diyora!', B: 'Hech shubhasiz, mening Diyoram!', C: 'Yuragimning egasi — Diyora!', D: 'Har bir nafasimda va har bir variantda — faqat Diyora!' },
+          best: 'D',
+          fb: {
+            A: 'Albatta, Diyora! Har bir variantda va har bir yurak urishimda faqat sening isming bor ❤️',
             B: 'Hech qanday shubha yo‘q! Sening borliging — eng katta baxt va faxr 💖',
             C: 'Yuragimning yagona egasi — sen! Barcha javoblar faqat senga olib keladi 🌹',
-            D: 'Mutlaq g‘alaba! Bayraming muborak bo‘lsin, azizam Diyora! Sen bilan doim faxrlanaman ✨👑' } },
-  ];
+            D: 'Mutlaq g‘alaba! Bayraming muborak bo‘lsin, azizam Diyora! Sen bilan doim faxrlanaman ✨👑'
+          }
+        },
+      ];
 
-  /* ---------- state ---------- */
-  let idx = 0, score = 0, answered = false;
-  const PTS_BEST = 100, PTS_OTHER = 80;
+      /* ---------- state ---------- */
+      let idx = 0, score = 0, answered = false;
+      const PTS_BEST = 100, PTS_OTHER = 80;
 
-  const show = (id) => ['welcome', 'quiz', 'finale'].forEach(s => { $(s).hidden = s !== id; });
-  function animateIn(el) { el.classList.remove('enter'); void el.offsetWidth; el.classList.add('enter'); }
+      const show = (id) => ['welcome', 'quiz', 'finale'].forEach(s => { $(s).hidden = s !== id; });
+      function animateIn(el) { el.classList.remove('enter'); void el.offsetWidth; el.classList.add('enter'); }
 
-  function start() {
-    idx = 0; score = 0; $('score').textContent = '0';
-    show('quiz'); animateIn($('quiz')); render();
-    scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  function render() {
-    const q = Q[idx]; answered = false;
-    $('q-counter').textContent = `${idx + 1}-savol / ${Q.length}`;
-    $('progress').style.width = (idx / Q.length * 100) + '%';
-    $('q-kind').textContent = q.kind === 'med' ? '🩺 Haqiqiy tibbiy savol' : '💗 Yurak savoli';
-    $('q-kind').className = 'text-[11px] font-bold uppercase tracking-wider mb-2 ' + (q.kind === 'med' ? 'text-teal-600' : 'text-pink-500');
-    $('q-text').textContent = q.q;
-    $('feedback').hidden = true; $('next-btn').hidden = true;
-    const box = $('options'); box.innerHTML = '';
-    Object.entries(q.o).forEach(([k, txt]) => {
-      const b = document.createElement('button');
-      b.type = 'button'; b.dataset.key = k;
-      b.className = 'opt w-full text-left p-4 rounded-2xl bg-white/90 hover:bg-rose-50/90 border-2 border-rose-100 hover:border-rose-300 flex items-center gap-3.5 shadow-sm group';
-      b.innerHTML = `<span class="badge w-8 h-8 rounded-xl bg-rose-100 text-rose-700 group-hover:bg-rose-500 group-hover:text-white font-extrabold text-sm flex items-center justify-center shrink-0 transition-colors">${k}</span><span class="txt text-sm sm:text-base font-semibold text-rose-950 leading-snug"></span>`;
-      b.querySelector('.txt').textContent = txt;
-      b.addEventListener('click', () => answer(k));
-      box.appendChild(b);
-    });
-    const body = $('q-body'); animateIn(body);
-  }
-
-  function addScore(n) {
-    const el = $('score'), from = score, to = score + n, t0 = performance.now();
-    score = to;
-    const tick = (t) => { const k = Math.min(1, (t - t0) / 600); el.textContent = Math.round(from + (to - from) * k); if (k < 1) requestAnimationFrame(tick); };
-    requestAnimationFrame(tick);
-    el.classList.remove('pop'); void el.offsetWidth; el.classList.add('pop');
-    const p = document.createElement('span');
-    p.className = 'plus text-xs font-black text-rose-500'; p.textContent = '+' + n;
-    el.parentElement.appendChild(p); setTimeout(() => p.remove(), 1200);
-  }
-
-  function answer(sel) {
-    if (answered) return; answered = true;
-    const q = Q[idx], best = sel === q.best;
-    $('options').querySelectorAll('.opt').forEach(b => {
-      const k = b.dataset.key, badge = b.querySelector('.badge');
-      b.disabled = true;
-      b.className = 'opt w-full text-left p-4 rounded-2xl border-2 flex items-center gap-3.5 cursor-default ';
-      if (k === q.best) {
-        b.className += 'bg-gradient-to-r from-rose-50 to-pink-50 border-rose-500 shadow-sm';
-        badge.className = 'badge w-8 h-8 rounded-xl bg-rose-500 text-white font-extrabold text-sm flex items-center justify-center shrink-0';
-        badge.textContent = '✓';
-      } else if (k === sel) {
-        b.className += 'bg-amber-50/80 border-amber-400';
-        badge.className = 'badge w-8 h-8 rounded-xl bg-amber-500 text-white font-extrabold text-sm flex items-center justify-center shrink-0';
-      } else {
-        b.className += 'bg-white/60 border-rose-100/60 opacity-60';
-        badge.className = 'badge w-8 h-8 rounded-xl bg-rose-50 text-rose-400 font-extrabold text-sm flex items-center justify-center shrink-0';
+      function start() {
+        idx = 0; score = 0; $('score').textContent = '0';
+        show('quiz'); animateIn($('quiz')); render();
+        scrollTo({ top: 0, behavior: 'smooth' });
       }
-    });
-    const fb = $('feedback');
-    fb.hidden = false; fb.classList.remove('fb-enter'); void fb.offsetWidth; fb.classList.add('fb-enter');
-    if (best) {
-      fb.className = 'fb-enter rounded-2xl p-4 mb-5 border bg-gradient-to-r from-rose-50 to-pink-50 border-rose-200 text-rose-950 text-xs sm:text-sm leading-relaxed';
-      $('fb-icon').textContent = '💖';
-      $('fb-title').textContent = q.kind === 'med' ? 'To‘g‘ri javob!' : 'Yurakdan topding!';
-      $('fb-title').className = 'font-extrabold mb-0.5 text-rose-600';
-      burst(40, .55); vibrate(25);
-    } else {
-      fb.className = 'fb-enter rounded-2xl p-4 mb-5 border bg-amber-50/90 border-amber-200 text-amber-950 text-xs sm:text-sm leading-relaxed';
-      $('fb-icon').textContent = '🌹';
-      $('fb-title').textContent = q.kind === 'med' ? `Deyarli! To‘g‘ri javob — ${q.best}` : `Juda iliq javob! (Eng mukammali — ${q.best})`;
-      $('fb-title').className = 'font-extrabold mb-0.5 text-amber-700';
-      vibrate(12);
-    }
-    $('fb-text').textContent = q.fb[sel];
-    addScore(best ? PTS_BEST : PTS_OTHER);
-    $('progress').style.width = ((idx + 1) / Q.length * 100) + '%';
-    $('next-btn').hidden = false;
-    $('next-text').textContent = idx === Q.length - 1 ? 'Diplom va bayram tabrigini ochish 👑' : 'Keyingi savol';
-    setTimeout(() => $('next-btn').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'nearest' }), 250);
-  }
 
-  function next() {
-    if (!answered) return;
-    if (idx < Q.length - 1) { idx++; render(); $('quiz').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); }
-    else finale();
-  }
+      function render() {
+        const q = Q[idx]; answered = false;
+        $('q-counter').textContent = `${idx + 1}-savol / ${Q.length}`;
+        $('progress').style.width = (idx / Q.length * 100) + '%';
+        $('q-kind').textContent = q.kind === 'med' ? '🩺 Haqiqiy tibbiy savol' : '💗 Yurak savoli';
+        $('q-kind').className = 'text-[11px] font-bold uppercase tracking-wider mb-2 ' + (q.kind === 'med' ? 'text-teal-600' : 'text-pink-500');
+        $('q-text').textContent = q.q;
+        $('feedback').hidden = true; $('next-btn').hidden = true;
+        const box = $('options'); box.innerHTML = '';
+        Object.entries(q.o).forEach(([k, txt]) => {
+          const b = document.createElement('button');
+          b.type = 'button'; b.dataset.key = k;
+          b.className = 'opt w-full text-left p-4 rounded-2xl bg-white/90 hover:bg-rose-50/90 border-2 border-rose-100 hover:border-rose-300 flex items-center gap-3.5 shadow-sm group';
+          b.innerHTML = `<span class="badge w-8 h-8 rounded-xl bg-rose-100 text-rose-700 group-hover:bg-rose-500 group-hover:text-white font-extrabold text-sm flex items-center justify-center shrink-0 transition-colors">${k}</span><span class="txt text-sm sm:text-base font-semibold text-rose-950 leading-snug"></span>`;
+          b.querySelector('.txt').textContent = txt;
+          b.addEventListener('click', () => answer(k));
+          box.appendChild(b);
+        });
+        const body = $('q-body'); animateIn(body);
+      }
 
-  function finale() {
-    show('finale');
-    $('finale').querySelectorAll('.enter').forEach(animateIn);
-    $('v-trigger').hidden = false; $('voucher').hidden = true;
-    scrollTo({ top: 0, behavior: 'smooth' });
-    burst(160, .45); vibrate([30, 60, 30, 60, 80]);
-    // score counts up, then the scale "breaks" and shows ∞
-    const el = $('final-score'), note = $('final-note'), t0 = performance.now(), to = score;
-    note.textContent = '';
-    const tick = (t) => {
-      const k = Math.min(1, (t - t0) / 1600), e = 1 - Math.pow(1 - k, 3);
-      el.textContent = Math.round(to * e);
-      if (k < 1) requestAnimationFrame(tick);
-      else setTimeout(() => { el.textContent = '∞'; el.classList.add('pop'); note.textContent = '(shkala yetmadi)'; burst(50, .4); }, 700);
-    };
-    requestAnimationFrame(tick);
-  }
+      function addScore(n) {
+        const el = $('score'), from = score, to = score + n, t0 = performance.now();
+        score = to;
+        const tick = (t) => { const k = Math.min(1, (t - t0) / 600); el.textContent = Math.round(from + (to - from) * k); if (k < 1) requestAnimationFrame(tick); };
+        requestAnimationFrame(tick);
+        el.classList.remove('pop'); void el.offsetWidth; el.classList.add('pop');
+        const p = document.createElement('span');
+        p.className = 'plus text-xs font-black text-rose-500'; p.textContent = '+' + n;
+        el.parentElement.appendChild(p); setTimeout(() => p.remove(), 1200);
+      }
 
-  $('start-btn').addEventListener('click', start);
-  $('next-btn').addEventListener('click', next);
-  $('restart-btn').addEventListener('click', () => { show('welcome'); animateIn($('welcome')); scrollTo({ top: 0, behavior: 'smooth' }); });
-  $('v-btn').addEventListener('click', () => {
-    $('v-trigger').hidden = true; const v = $('voucher'); v.hidden = false;
-    v.classList.remove('flip-in'); void v.offsetWidth; v.classList.add('flip-in');
-    burst(110, .6); vibrate([20, 40, 20]);
-  });
+      function answer(sel) {
+        if (answered) return; answered = true;
+        const q = Q[idx], best = sel === q.best;
+        $('options').querySelectorAll('.opt').forEach(b => {
+          const k = b.dataset.key, badge = b.querySelector('.badge');
+          b.disabled = true;
+          b.className = 'opt w-full text-left p-4 rounded-2xl border-2 flex items-center gap-3.5 cursor-default ';
+          if (k === q.best) {
+            b.className += 'bg-gradient-to-r from-rose-50 to-pink-50 border-rose-500 shadow-sm';
+            badge.className = 'badge w-8 h-8 rounded-xl bg-rose-500 text-white font-extrabold text-sm flex items-center justify-center shrink-0';
+            badge.textContent = '✓';
+          } else if (k === sel) {
+            b.className += 'bg-amber-50/80 border-amber-400';
+            badge.className = 'badge w-8 h-8 rounded-xl bg-amber-500 text-white font-extrabold text-sm flex items-center justify-center shrink-0';
+          } else {
+            b.className += 'bg-white/60 border-rose-100/60 opacity-60';
+            badge.className = 'badge w-8 h-8 rounded-xl bg-rose-50 text-rose-400 font-extrabold text-sm flex items-center justify-center shrink-0';
+          }
+        });
+        const fb = $('feedback');
+        fb.hidden = false; fb.classList.remove('fb-enter'); void fb.offsetWidth; fb.classList.add('fb-enter');
+        if (best) {
+          fb.className = 'fb-enter rounded-2xl p-4 mb-5 border bg-gradient-to-r from-rose-50 to-pink-50 border-rose-200 text-rose-950 text-xs sm:text-sm leading-relaxed';
+          $('fb-icon').textContent = '💖';
+          $('fb-title').textContent = q.kind === 'med' ? 'To‘g‘ri javob!' : 'Yurakdan topding!';
+          $('fb-title').className = 'font-extrabold mb-0.5 text-rose-600';
+          burst(40, .55); vibrate(25);
+        } else {
+          fb.className = 'fb-enter rounded-2xl p-4 mb-5 border bg-amber-50/90 border-amber-200 text-amber-950 text-xs sm:text-sm leading-relaxed';
+          $('fb-icon').textContent = '🌹';
+          $('fb-title').textContent = q.kind === 'med' ? `Deyarli! To‘g‘ri javob — ${q.best}` : `Juda iliq javob! (Eng mukammali — ${q.best})`;
+          $('fb-title').className = 'font-extrabold mb-0.5 text-amber-700';
+          vibrate(12);
+        }
+        $('fb-text').textContent = q.fb[sel];
+        addScore(best ? PTS_BEST : PTS_OTHER);
+        $('progress').style.width = ((idx + 1) / Q.length * 100) + '%';
+        $('next-btn').hidden = false;
+        $('next-text').textContent = idx === Q.length - 1 ? 'Diplom va bayram tabrigini ochish 👑' : 'Keyingi savol';
+        setTimeout(() => $('next-btn').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'nearest' }), 250);
+      }
 
-  document.addEventListener('keydown', (e) => {
-    if ($('quiz').hidden || e.metaKey || e.ctrlKey || e.altKey) return;
-    const map = { a: 'A', b: 'B', c: 'C', d: 'D', '1': 'A', '2': 'B', '3': 'C', '4': 'D' };
-    const k = map[e.key.toLowerCase()];
-    if (k && !answered) answer(k);
-    else if (e.key === 'Enter' && answered && document.activeElement?.id !== 'next-btn') next();
-  });
+      function next() {
+        if (!answered) return;
+        if (idx < Q.length - 1) { idx++; render(); $('quiz').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); }
+        else finale();
+      }
 
-  /* ---------- toast & share ---------- */
-  let toastT = 0;
-  function toast(msg) { const t = $('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 3000); }
-  $('share-btn').addEventListener('click', async () => {
-    const url = location.href, text = '17-noyabr — Talabalar kuni muborak, Diyora! ❤️ Sening sharafingga tayyorlangan maxsus kvest:';
-    if (navigator.share && url.startsWith('http')) { try { await navigator.share({ title: 'Bo‘lajak shifokor kvesti', text, url }); } catch (e) {} return; }
-    const val = url.startsWith('http') ? `${text} ${url}` : text;
-    try { await navigator.clipboard.writeText(val); }
-    catch (e) { const ta = document.createElement('textarea'); ta.value = val; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }
-    toast('Tabrik matni nusxalandi! ❤️');
-  });
+      function finale() {
+        show('finale');
+        $('finale').querySelectorAll('.enter').forEach(animateIn);
+        $('v-trigger').hidden = false; $('voucher').hidden = true;
+        scrollTo({ top: 0, behavior: 'smooth' });
+        burst(160, .45); vibrate([30, 60, 30, 60, 80]);
+        // score counts up, then the scale "breaks" and shows ∞
+        const el = $('final-score'), note = $('final-note'), t0 = performance.now(), to = score;
+        note.textContent = '';
+        const tick = (t) => {
+          const k = Math.min(1, (t - t0) / 1600), e = 1 - Math.pow(1 - k, 3);
+          el.textContent = Math.round(to * e);
+          if (k < 1) requestAnimationFrame(tick);
+          else setTimeout(() => { el.textContent = '∞'; el.classList.add('pop'); note.textContent = '(shkala yetmadi)'; burst(50, .4); }, 700);
+        };
+        requestAnimationFrame(tick);
+      }
 
-  /* ---------- diploma as an image ---------- */
-  function wrap(c, text, x, y, maxW, lh) {
-    const words = text.split(' '); let line = '';
-    for (const w of words) {
-      const t = line ? line + ' ' + w : w;
-      if (c.measureText(t).width > maxW && line) { c.fillText(line, x, y); line = w; y += lh; } else line = t;
-    }
-    if (line) c.fillText(line, x, y);
-    return y;
-  }
-  async function makeDiploma() {
-    try { await Promise.all(['700 52px "Playfair Display"', '130px "Great Vibes"', '800 26px Inter', '500 30px Inter'].map(f => document.fonts.load(f))); } catch (e) {}
-    const W = 1080, H = 1350, cv = document.createElement('canvas'); cv.width = W; cv.height = H;
-    const c = cv.getContext('2d');
-    const bg = c.createLinearGradient(0, 0, W, H);
-    bg.addColorStop(0, '#fff1f2'); bg.addColorStop(.5, '#fdf2f8'); bg.addColorStop(1, '#fef3c7');
-    c.fillStyle = bg; c.fillRect(0, 0, W, H);
-    // soft glows
-    [[160, 160, '#fda4af'], [920, 1190, '#fcd34d']].forEach(([x, y, col]) => {
-      const g = c.createRadialGradient(x, y, 0, x, y, 420); g.addColorStop(0, col + '55'); g.addColorStop(1, col + '00');
-      c.fillStyle = g; c.fillRect(0, 0, W, H);
-    });
-    // double frame
-    c.strokeStyle = '#fb7185'; c.lineWidth = 6; c.strokeRect(46, 46, W - 92, H - 92);
-    c.strokeStyle = '#d4af37'; c.lineWidth = 2; c.strokeRect(68, 68, W - 136, H - 136);
-    c.font = '44px serif'; c.fillStyle = '#fda4af'; c.textAlign = 'center'; c.textBaseline = 'middle';
-    [[110, 110], [W - 110, 110], [110, H - 110], [W - 110, H - 110]].forEach(([x, y]) => c.fillText('❀', x, y));
-    c.textBaseline = 'alphabetic';
-    // crown medallion
-    const mg = c.createLinearGradient(470, 150, 610, 290); mg.addColorStop(0, '#fb7185'); mg.addColorStop(.5, '#ec4899'); mg.addColorStop(1, '#fbbf24');
-    c.fillStyle = mg; c.beginPath(); c.arc(W / 2, 225, 72, 0, 6.283); c.fill();
-    c.lineWidth = 8; c.strokeStyle = '#fff'; c.stroke();
-    c.font = '70px serif'; c.fillText('👑', W / 2, 250);
-    c.fillStyle = '#f43f5e'; c.font = '800 26px Inter';
-    if ('letterSpacing' in c) c.letterSpacing = '6px';
-    c.fillText('17-NOYABR • TALABALAR KUNI MUBORAK', W / 2, 360);
-    if ('letterSpacing' in c) c.letterSpacing = '0px';
-    c.fillStyle = '#4c0519'; c.font = '700 54px "Playfair Display"';
-    c.fillText('QALBIMNING ENG GO‘ZAL', W / 2, 450); c.fillText('SHIFOKORI', W / 2, 520);
-    // name plate
-    c.fillStyle = 'rgba(255,255,255,.75)'; c.strokeStyle = '#fecdd3'; c.lineWidth = 3;
-    c.beginPath(); c.roundRect ? c.roundRect(150, 570, W - 300, 250, 36) : c.rect(150, 570, W - 300, 250); c.fill(); c.stroke();
-    c.fillStyle = '#f43f5e'; c.font = '600 28px Inter'; c.fillText('Ushbu faxriy yorliq egasi:', W / 2, 625);
-    c.fillStyle = '#e11d48'; c.font = '130px "Great Vibes"'; c.fillText('Azizam Diyora', W / 2, 745);
-    c.fillStyle = '#fb7185'; c.font = '700 24px Inter'; c.fillText('TDTU • 5-KURS TALABASI', W / 2, 795);
-    c.fillStyle = '#881337'; c.font = '500 31px Inter';
-    const yEnd = wrap(c, 'Eng mashaqqatli va sharafli kasb yo‘lidagi matonating, mehrli qalbing va hayotimga olib kirgan cheksiz nuring uchun «Dunyodagi eng betakror bo‘lajak shifokor» unvoni bilan taqdirlanasan!', W / 2, 890, W - 280, 46);
-    c.fillStyle = '#e11d48'; c.font = '700 34px "Playfair Display"'; c.fillText('Yakuniy mehr balli: ∞', W / 2, yEnd + 85);
-    // footer: date + signature + stamp
-    c.strokeStyle = '#fecdd3'; c.setLineDash([10, 8]); c.lineWidth = 2; c.beginPath(); c.moveTo(130, 1135); c.lineTo(W - 130, 1135); c.stroke(); c.setLineDash([]);
-    c.textAlign = 'left'; c.fillStyle = '#9f1239'; c.font = '700 28px Inter'; c.fillText('Sana: 17.11.2026', 140, 1195);
-    c.fillStyle = '#e11d48'; c.font = '58px "Great Vibes"'; c.fillText('Alishering', 140, 1262);
-    c.save(); c.translate(W - 280, 1215); c.rotate(-.12);
-    c.strokeStyle = '#f43f5e'; c.lineWidth = 5; c.beginPath(); c.roundRect ? c.roundRect(-150, -42, 300, 84, 42) : c.rect(-150, -42, 300, 84); c.stroke();
-    c.fillStyle = '#e11d48'; c.font = '900 26px Inter'; c.textAlign = 'center'; c.fillText('❤️ 100% SEVGI BILAN', 0, 10);
-    c.restore();
-    return cv.toDataURL('image/png');
-  }
-  $('save-btn').addEventListener('click', async () => {
-    const url = await makeDiploma();
-    $('dip-img').src = url; $('dip-dl').href = url; $('modal').hidden = false;
-  });
-  $('modal-close').addEventListener('click', () => $('modal').hidden = true);
-  $('modal').addEventListener('click', (e) => { if (e.target.id === 'modal') $('modal').hidden = true; });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') $('modal').hidden = true; });
+      $('start-btn').addEventListener('click', start);
+      $('next-btn').addEventListener('click', next);
+      $('restart-btn').addEventListener('click', () => { show('welcome'); animateIn($('welcome')); scrollTo({ top: 0, behavior: 'smooth' }); });
+      $('v-btn').addEventListener('click', () => {
+        $('v-trigger').hidden = true; const v = $('voucher'); v.hidden = false;
+        v.classList.remove('flip-in'); void v.offsetWidth; v.classList.add('flip-in');
+        burst(110, .6); vibrate([20, 40, 20]);
+      });
 
-  /* ---------- confetti (hearts + ribbons) ---------- */
-  const fx = $('fx'), fc = fx.getContext('2d');
-  let parts = [], running = false, lastT = 0;
-  const size = () => { const d = Math.min(devicePixelRatio || 1, 2); fx.width = innerWidth * d; fx.height = innerHeight * d; fc.setTransform(d, 0, 0, d, 0, 0); };
-  addEventListener('resize', size); size();
-  function heart(s) {
-    fc.beginPath(); const t = s * .3;
-    fc.moveTo(0, t); fc.bezierCurveTo(0, 0, -s / 2, 0, -s / 2, t);
-    fc.bezierCurveTo(-s / 2, (s + t) / 2, 0, (s + t) / 1.2, 0, s);
-    fc.bezierCurveTo(0, (s + t) / 1.2, s / 2, (s + t) / 2, s / 2, t);
-    fc.bezierCurveTo(s / 2, 0, 0, 0, 0, t); fc.closePath(); fc.fill();
-  }
-  function burst(n = 120, oy = .45) {
-    if (reduce) return;
-    const cols = ['#f43f5e','#ec4899','#fbbf24','#fb7185','#f472b6','#fda4af'];
-    for (let i = 0; i < n; i++) parts.push({
-      x: innerWidth * (.15 + Math.random() * .7), y: innerHeight * oy,
-      vx: (Math.random() - .5) * 14, vy: (Math.random() - 1) * 15 - 3,
-      s: Math.random() * 7 + 4, c: cols[i % cols.length], r: Math.random() * 360, vr: (Math.random() - .5) * 10,
-      o: 1, h: Math.random() > .5,
-    });
-    if (!running) { running = true; lastT = 0; requestAnimationFrame(loop); }
-  }
-  function loop(t) {
-    const dt = Math.min((t - (lastT || t)) / 16.67, 3); lastT = t;
-    fc.clearRect(0, 0, innerWidth, innerHeight);
-    for (let i = parts.length - 1; i >= 0; i--) {
-      const p = parts[i];
-      p.x += p.vx * dt; p.y += p.vy * dt; p.vy += .32 * dt; p.vx *= Math.pow(.98, dt); p.r += p.vr * dt; p.o -= .0075 * dt;
-      if (p.o <= 0 || p.y > innerHeight + 25) { parts.splice(i, 1); continue; }
-      fc.save(); fc.translate(p.x, p.y); fc.rotate(p.r * Math.PI / 180); fc.globalAlpha = Math.max(0, p.o); fc.fillStyle = p.c;
-      if (p.h) heart(p.s * 1.4); else fc.fillRect(-p.s / 2, -p.s / 2, p.s, p.s * .6);
-      fc.restore();
-    }
-    if (parts.length) requestAnimationFrame(loop); else { running = false; fc.clearRect(0, 0, innerWidth, innerHeight); }
-  }
-})();
-</script>
+      document.addEventListener('keydown', (e) => {
+        if ($('quiz').hidden || e.metaKey || e.ctrlKey || e.altKey) return;
+        const map = { a: 'A', b: 'B', c: 'C', d: 'D', '1': 'A', '2': 'B', '3': 'C', '4': 'D' };
+        const k = map[e.key.toLowerCase()];
+        if (k && !answered) answer(k);
+        else if (e.key === 'Enter' && answered && document.activeElement?.id !== 'next-btn') next();
+      });
+
+      /* ---------- toast & share ---------- */
+      let toastT = 0;
+      function toast(msg) { const t = $('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 3000); }
+      $('share-btn').addEventListener('click', async () => {
+        const url = location.href, text = '17-noyabr — Talabalar kuni muborak, Diyora! ❤️ Sening sharafingga tayyorlangan maxsus kvest:';
+        if (navigator.share && url.startsWith('http')) { try { await navigator.share({ title: 'Bo‘lajak shifokor kvesti', text, url }); } catch (e) { } return; }
+        const val = url.startsWith('http') ? `${text} ${url}` : text;
+        try { await navigator.clipboard.writeText(val); }
+        catch (e) { const ta = document.createElement('textarea'); ta.value = val; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }
+        toast('Tabrik matni nusxalandi! ❤️');
+      });
+
+      /* ---------- diploma as an image ---------- */
+      function wrap(c, text, x, y, maxW, lh) {
+        const words = text.split(' '); let line = '';
+        for (const w of words) {
+          const t = line ? line + ' ' + w : w;
+          if (c.measureText(t).width > maxW && line) { c.fillText(line, x, y); line = w; y += lh; } else line = t;
+        }
+        if (line) c.fillText(line, x, y);
+        return y;
+      }
+      async function makeDiploma() {
+        try { await Promise.all(['700 52px "Playfair Display"', '130px "Great Vibes"', '800 26px Inter', '500 30px Inter'].map(f => document.fonts.load(f))); } catch (e) { }
+        const W = 1080, H = 1350, cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+        const c = cv.getContext('2d');
+        const bg = c.createLinearGradient(0, 0, W, H);
+        bg.addColorStop(0, '#fff1f2'); bg.addColorStop(.5, '#fdf2f8'); bg.addColorStop(1, '#fef3c7');
+        c.fillStyle = bg; c.fillRect(0, 0, W, H);
+        // soft glows
+        [[160, 160, '#fda4af'], [920, 1190, '#fcd34d']].forEach(([x, y, col]) => {
+          const g = c.createRadialGradient(x, y, 0, x, y, 420); g.addColorStop(0, col + '55'); g.addColorStop(1, col + '00');
+          c.fillStyle = g; c.fillRect(0, 0, W, H);
+        });
+        // double frame
+        c.strokeStyle = '#fb7185'; c.lineWidth = 6; c.strokeRect(46, 46, W - 92, H - 92);
+        c.strokeStyle = '#d4af37'; c.lineWidth = 2; c.strokeRect(68, 68, W - 136, H - 136);
+        c.font = '44px serif'; c.fillStyle = '#fda4af'; c.textAlign = 'center'; c.textBaseline = 'middle';
+        [[110, 110], [W - 110, 110], [110, H - 110], [W - 110, H - 110]].forEach(([x, y]) => c.fillText('❀', x, y));
+        c.textBaseline = 'alphabetic';
+        // crown medallion
+        const mg = c.createLinearGradient(470, 150, 610, 290); mg.addColorStop(0, '#fb7185'); mg.addColorStop(.5, '#ec4899'); mg.addColorStop(1, '#fbbf24');
+        c.fillStyle = mg; c.beginPath(); c.arc(W / 2, 225, 72, 0, 6.283); c.fill();
+        c.lineWidth = 8; c.strokeStyle = '#fff'; c.stroke();
+        c.font = '70px serif'; c.fillText('👑', W / 2, 250);
+        c.fillStyle = '#f43f5e'; c.font = '800 26px Inter';
+        if ('letterSpacing' in c) c.letterSpacing = '6px';
+        c.fillText('17-NOYABR • TALABALAR KUNI MUBORAK', W / 2, 360);
+        if ('letterSpacing' in c) c.letterSpacing = '0px';
+        c.fillStyle = '#4c0519'; c.font = '700 54px "Playfair Display"';
+        c.fillText('QALBIMNING ENG GO‘ZAL', W / 2, 450); c.fillText('SHIFOKORI', W / 2, 520);
+        // name plate
+        c.fillStyle = 'rgba(255,255,255,.75)'; c.strokeStyle = '#fecdd3'; c.lineWidth = 3;
+        c.beginPath(); c.roundRect ? c.roundRect(150, 570, W - 300, 250, 36) : c.rect(150, 570, W - 300, 250); c.fill(); c.stroke();
+        c.fillStyle = '#f43f5e'; c.font = '600 28px Inter'; c.fillText('Ushbu faxriy yorliq egasi:', W / 2, 625);
+        c.fillStyle = '#e11d48'; c.font = '130px "Great Vibes"'; c.fillText('Azizam Diyora', W / 2, 745);
+        c.fillStyle = '#fb7185'; c.font = '700 24px Inter'; c.fillText('TDTU • 5-KURS TALABASI', W / 2, 795);
+        c.fillStyle = '#881337'; c.font = '500 31px Inter';
+        const yEnd = wrap(c, 'Eng mashaqqatli va sharafli kasb yo‘lidagi matonating, mehrli qalbing va hayotimga olib kirgan cheksiz nuring uchun «Dunyodagi eng betakror bo‘lajak shifokor» unvoni bilan taqdirlanasan!', W / 2, 890, W - 280, 46);
+        c.fillStyle = '#e11d48'; c.font = '700 34px "Playfair Display"'; c.fillText('Yakuniy mehr balli: ∞', W / 2, yEnd + 85);
+        // footer: date + signature + stamp
+        c.strokeStyle = '#fecdd3'; c.setLineDash([10, 8]); c.lineWidth = 2; c.beginPath(); c.moveTo(130, 1135); c.lineTo(W - 130, 1135); c.stroke(); c.setLineDash([]);
+        c.textAlign = 'left'; c.fillStyle = '#9f1239'; c.font = '700 28px Inter'; c.fillText('Sana: 17.11.2026', 140, 1195);
+        c.fillStyle = '#e11d48'; c.font = '58px "Great Vibes"'; c.fillText('Alishering', 140, 1262);
+        c.save(); c.translate(W - 280, 1215); c.rotate(-.12);
+        c.strokeStyle = '#f43f5e'; c.lineWidth = 5; c.beginPath(); c.roundRect ? c.roundRect(-150, -42, 300, 84, 42) : c.rect(-150, -42, 300, 84); c.stroke();
+        c.fillStyle = '#e11d48'; c.font = '900 26px Inter'; c.textAlign = 'center'; c.fillText('❤️ 100% SEVGI BILAN', 0, 10);
+        c.restore();
+        return cv.toDataURL('image/png');
+      }
+      $('save-btn').addEventListener('click', async () => {
+        const url = await makeDiploma();
+        $('dip-img').src = url; $('dip-dl').href = url; $('modal').hidden = false;
+      });
+      $('modal-close').addEventListener('click', () => $('modal').hidden = true);
+      $('modal').addEventListener('click', (e) => { if (e.target.id === 'modal') $('modal').hidden = true; });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') $('modal').hidden = true; });
+
+      /* ---------- confetti (hearts + ribbons) ---------- */
+      const fx = $('fx'), fc = fx.getContext('2d');
+      let parts = [], running = false, lastT = 0;
+      const size = () => { const d = Math.min(devicePixelRatio || 1, 2); fx.width = innerWidth * d; fx.height = innerHeight * d; fc.setTransform(d, 0, 0, d, 0, 0); };
+      addEventListener('resize', size); size();
+      function heart(s) {
+        fc.beginPath(); const t = s * .3;
+        fc.moveTo(0, t); fc.bezierCurveTo(0, 0, -s / 2, 0, -s / 2, t);
+        fc.bezierCurveTo(-s / 2, (s + t) / 2, 0, (s + t) / 1.2, 0, s);
+        fc.bezierCurveTo(0, (s + t) / 1.2, s / 2, (s + t) / 2, s / 2, t);
+        fc.bezierCurveTo(s / 2, 0, 0, 0, 0, t); fc.closePath(); fc.fill();
+      }
+      function burst(n = 120, oy = .45) {
+        if (reduce) return;
+        const cols = ['#f43f5e', '#ec4899', '#fbbf24', '#fb7185', '#f472b6', '#fda4af'];
+        for (let i = 0; i < n; i++) parts.push({
+          x: innerWidth * (.15 + Math.random() * .7), y: innerHeight * oy,
+          vx: (Math.random() - .5) * 14, vy: (Math.random() - 1) * 15 - 3,
+          s: Math.random() * 7 + 4, c: cols[i % cols.length], r: Math.random() * 360, vr: (Math.random() - .5) * 10,
+          o: 1, h: Math.random() > .5,
+        });
+        if (!running) { running = true; lastT = 0; requestAnimationFrame(loop); }
+      }
+      function loop(t) {
+        const dt = Math.min((t - (lastT || t)) / 16.67, 3); lastT = t;
+        fc.clearRect(0, 0, innerWidth, innerHeight);
+        for (let i = parts.length - 1; i >= 0; i--) {
+          const p = parts[i];
+          p.x += p.vx * dt; p.y += p.vy * dt; p.vy += .32 * dt; p.vx *= Math.pow(.98, dt); p.r += p.vr * dt; p.o -= .0075 * dt;
+          if (p.o <= 0 || p.y > innerHeight + 25) { parts.splice(i, 1); continue; }
+          fc.save(); fc.translate(p.x, p.y); fc.rotate(p.r * Math.PI / 180); fc.globalAlpha = Math.max(0, p.o); fc.fillStyle = p.c;
+          if (p.h) heart(p.s * 1.4); else fc.fillRect(-p.s / 2, -p.s / 2, p.s, p.s * .6);
+          fc.restore();
+        }
+        if (parts.length) requestAnimationFrame(loop); else { running = false; fc.clearRect(0, 0, innerWidth, innerHeight); }
+      }
+    })();
+  </script>
 </body>
+
 </html>
