@@ -358,12 +358,16 @@
   ];
   const BASS = [174.61, 164.81, 146.83, 130.81];
   const STEP = .4;
-  let ac = null, master = null, playing = false, sched = null, nextT = 0, idx = 0;
+  // Music is ON by default. Browsers only let sound start after the first tap,
+  // so we start right away (works where autoplay is allowed) and unlock on the first touch/click/key.
+  let ac = null, master = null, playing = false, sched = null, nextT = 0, idx = 0, want = true;
 
   function initAudio() {
     if (ac) return ac;
     const C = window.AudioContext || window.webkitAudioContext; if (!C) return null;
+    try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) {} // iOS: play even on silent switch
     ac = new C();
+    ac.addEventListener && ac.addEventListener('statechange', musicUI);
     master = ac.createGain(); master.gain.value = 0;
     const comp = ac.createDynamicsCompressor();
     // simple "room": feedback delay through a low-pass filter
@@ -414,17 +418,32 @@
     musicUI();
   }
   function musicUI() {
-    $('music-btn').classList.toggle('playing', playing);
-    $('music-label').textContent = playing ? 'Musiqani o‘chirish' : 'Musiqani yoqish';
+    const blocked = playing && ac && ac.state !== 'running';
+    $('music-btn').classList.toggle('playing', playing && !blocked);
+    $('music-label').textContent = blocked ? 'Musiqa uchun ekranga teging 🎵' : (playing ? 'Musiqani o‘chirish' : 'Musiqani yoqish');
   }
-  $('music-btn').addEventListener('click', (e) => { e.stopPropagation(); playing ? stopMusic() : startMusic(); });
-  document.addEventListener('visibilitychange', () => { if (document.hidden) stopMusic(); });
+  $('music-btn').addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (playing && ac && ac.state !== 'running') { ac.resume().then(musicUI); return; } // first tap = unlock, not "off"
+    want = !playing; want ? startMusic() : stopMusic();
+  });
+  // unlock audio on the first interaction anywhere on the page
+  const unlock = () => { if (want) startMusic(); if (ac && ac.state === 'running') UNLOCK_EVENTS.forEach(ev => removeEventListener(ev, unlock, true)); };
+  const UNLOCK_EVENTS = ['pointerdown', 'touchend', 'click', 'keydown'];
+  UNLOCK_EVENTS.forEach(ev => addEventListener(ev, unlock, true));
+  // pause while the tab/app is in the background, continue when she comes back
+  document.addEventListener('visibilitychange', () => {
+    if (!ac) return;
+    if (document.hidden) ac.suspend();
+    else if (want) ac.resume().then(musicUI);
+  });
+  startMusic(); // try autoplay right away
 
   /* ================= ENVELOPE ================= */
   let opened = false;
   function openEnvelope() {
     if (opened) return; opened = true;
-    startMusic(); vibrate([20, 40, 20]);
+    if (want) startMusic(); vibrate([20, 40, 20]);
     $('env').classList.add('open');
     $('open-prompt').style.opacity = '0';
     burst(45);
