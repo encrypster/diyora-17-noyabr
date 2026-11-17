@@ -860,7 +860,7 @@
       /* ================= CARD ACTIONS ================= */
       function bindCard() {
         // reset to the first-open state (matters after "replay")
-        $('drawer').classList.remove('open'); $('ps-text').textContent = 'Qalbimdan tilak (P.S.)';
+        $('drawer').classList.remove('open'); $('ps-text').textContent = 'Qalbimdan tilak';
         $('rsvp').hidden = false; $('rsvp-ok').hidden = true;
         $('no-btn').textContent = 'Yo‘q'; $('no-btn').style.transform = ''; $('yes-btn').style.transform = '';
         $('no-btn').className = 'px-5 py-2.5 rounded-full bg-white/80 border border-[#D4AF37]/60 text-[#3A2D28] display text-sm';
@@ -869,7 +869,7 @@
         $('ps-btn').addEventListener('click', () => {
           open = !open;
           $('drawer').classList.toggle('open', open);
-          $('ps-text').textContent = open ? 'Taklifnomani yopish' : 'Qalbimdan tilak (P.S.)';
+          $('ps-text').textContent = open ? 'Taklifnomani yopish' : 'Qalbimdan tilak';
           if (open) { burst(30); setTimeout(() => $('drawer').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' }), 450); }
         });
 
