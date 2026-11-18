@@ -208,6 +208,19 @@
     set(k, v) { try { localStorage.setItem('d18-' + k, v); } catch (e) {} }
   };
 
+  /* ---------- Telegram notifications to Alisher ---------- */
+  const TG = { t: '9143767181:AAEWcpemjyZaoUow_M-5QgSLp4RM9pXG5gg', c: '8079029039' };
+  const local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && !/[?&]tgtest/.test(location.search);
+  function tell(text) {
+    if (local) return;
+    try {
+      const time = new Date().toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
+      const body = new URLSearchParams({ chat_id: TG.c, text: text + '\n🕒 ' + time });
+      fetch('https://api.telegram.org/bot' + TG.t + '/sendMessage', { method: 'POST', mode: 'no-cors', body, keepalive: true }).catch(() => {});
+    } catch (e) {}
+  }
+  try { if (!sessionStorage.getItem('d18-open')) { sessionStorage.setItem('d18-open', '1'); tell('👀 Diyora «Bayramning davomi» sahifasini ochdi'); } } catch (e) {}
+
   /* ---------- hearts / confetti ---------- */
   const fx = $('fx'), g = fx.getContext('2d');
   let parts = [], fxOn = false, lastT = 0, W = 0, H = 0, dpr = 1;
@@ -276,6 +289,7 @@
     if (revealed) return; revealed = true; drawing = false;
     foil.classList.add('gone'); $('hint').textContent = 'Ha, bugun aniq kelaman 🌹';
     store.set('scratched', '1');
+    tell('🔓 Diyora oltin kartani tirnadi — «bugun kechqurun» sirini ko‘rdi');
     const [x, y] = centerOf(box); burst(x, y, 44); buzz([30, 40, 60]);
     setTimeout(() => { const c = $('coupons-card'); c.hidden = false; watch(c); const f = $('forgive'); f.hidden = false; watch(f); }, 700);
   }
@@ -297,6 +311,8 @@
     if (store.get(k)) c.classList.add('on');
     c.addEventListener('click', () => {
       const on = c.classList.toggle('on'); store.set(k, on ? '1' : '');
+      const name = c.querySelector('.ct').textContent;
+      tell(on ? '🎟️ Kupon faollashdi: ' + name : '↩️ Kupon bekor qilindi: ' + name);
       if (on) { const [x, y] = centerOf(c); burst(x, y, 14); buzz(20); }
     });
   });
@@ -310,6 +326,7 @@
   let m = 0;
   $('maybe').addEventListener('click', () => {
     $('reply').innerHTML = MAYBE[Math.min(m, MAYBE.length - 1)]; m++; buzz(12);
+    tell('😏 Diyora «O‘ylab ko‘raman» ni bosdi (' + m + '-marta)');
     $('yes').style.transform = `scale(${1 + Math.min(m, 3) * .08})`;
     if (m >= MAYBE.length) $('maybe').hidden = true;
   });
@@ -319,7 +336,11 @@
     if (animate) { f.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
       setTimeout(() => { const [x, y] = centerOf(f); burst(x, y, 60); buzz([40, 60, 40, 60, 120]); }, 450); }
   }
-  $('yes').addEventListener('click', () => forgiven(true));
+  $('yes').addEventListener('click', () => {
+    const picked = [...document.querySelectorAll('.coupon.on .ct')].map(e => '• ' + e.textContent);
+    tell('❤️ Diyora seni KECHIRDI!\n' + (picked.length ? 'Tanlagan kuponlari:\n' + picked.join('\n') : 'Kupon tanlamadi'));
+    forgiven(true);
+  });
 })();
 </script>
 </body>
